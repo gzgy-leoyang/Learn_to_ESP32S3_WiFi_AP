@@ -18,14 +18,17 @@ public:
 
     Q_INVOKABLE void socked_clicked(void);
     Q_INVOKABLE void ble_clicked(void);
+    Q_INVOKABLE void exit_clicked(void);
 
 signals:
     void core_temp_changed ( const QString& _str );
     void tcp_connect_changed( const bool& _con );
+    void access_point_changed( const QString& _ap_name );
 
 public slots:
     void slot_esp_message( const char* _buf,const int _size );
     void slot_connection( const bool& _con );
+    void slot_access_point_changed( const QString& _ap_name );
 private:
     tcp_client* client;
     QString m_core_temp;

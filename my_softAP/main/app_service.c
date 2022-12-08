@@ -84,7 +84,7 @@ static void app_task(void *pvParameters)
         data_store.core_temp = temp;
         ESP_LOGI(TAG, "temp %.02f",temp);
         memset(buf,0,20);
-        sprintf( buf,"temp %.02f\n",data_store.core_temp );
+        sprintf( buf,"%.02f",data_store.core_temp );
         ss = strlen(buf);
         if (send_message(buf,ss) < 0 ){
           ESP_LOGI(TAG, "Failed Send Message via WIFI");

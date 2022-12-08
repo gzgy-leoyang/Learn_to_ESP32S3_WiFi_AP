@@ -1,5 +1,11 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>icons/exit.png</file>
+        <file>icons/wifi.png</file>
+        <file>icons/bt.png</file>
+        <file>icons/temp.png</file>
+        <file>icons/tangle.png</file>
+        <file>icons/rotate.png</file>
     </qresource>
 </RCC>
